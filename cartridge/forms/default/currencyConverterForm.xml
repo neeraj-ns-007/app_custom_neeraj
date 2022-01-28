@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<form>
+    <field formid="select_currency" type="string" mandatory="true"  max-length="50"/>
+    <field formid="amount" type="string" mandatory="true"  max-length="50"/>
+    <action formid="submit" valid-form="true"/>
+</form>

@@ -1,0 +1,53 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        //assets.addJs('/js/currencyjs.js');
+        assets.addCss('/css/currencyStyle.css');
+    </isscript>
+
+    <form action="${URLUtils.url('currencyConverter-HandleForm')}" method="POST">
+
+        <div class="main-container">
+            <div class='container-1'>
+
+                <select class="currency_selector" id="select_currency" <isprint
+                    value="${pdict.form.select_currency.attributes}" encoding="off" /> >
+
+                <option value="" disabled selected>Select Currency :</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                </select>
+
+                <div class="input_value">
+                    <input type="number" id="amount" required <isprint value="${pdict.form.amount.attributes}"
+                        encoding="off" />/>
+                    <label for="amount" id="label_value">Value</label>
+                </div>
+
+                <button id="submit_btn" type="submit" name="submit">Get USD Values</button>
+
+                <isif condition="${pdict.result != null}">
+
+                    <isif condition="${pdict.result == 'success'}">
+                        <span id="success_msg" style='color: green;'>${pdict.result}</span>
+                    </isif>
+                    <isif condition="${pdict.result == 'error'}">
+                        <span id="success_msg" style='color: red;'>FAILED</span>
+                    </isif>
+                </isif>
+
+            </div>
+
+            <div class="container-2">
+
+                <isif condition="${pdict.conversion_result != null}">
+                    &dollar; ${pdict.conversion_result}
+                    <iselse>
+                        {Amount in USD}
+                </isif>
+
+            </div>
+
+        </div>
+    </form>
+</isdecorate>

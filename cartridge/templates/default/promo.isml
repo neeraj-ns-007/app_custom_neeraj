@@ -1,0 +1,41 @@
+<iscomment>6-2: add decorator here</iscomment>
+<isdecorate template="common/layout/page">
+    <div class="jumbotron">
+        <iscomment>
+            <h1>Hello Promo</h1>
+        </iscomment>
+        <h1>${Resource.msg('title.promo', 'mymessage', null)}</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 bg-primary">
+            <iscomment>6-7: add content slot here</iscomment>
+            <isslot id="my-promo" context="global" description="Promo Landing Page Slot" />
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-6 bg-info">
+            <div class="p-4">
+                <iscomment>6-3: add localinclude for promodescription here </iscomment>
+                <iscomment> <isinclude template="promodescription" sf-toolkit="on" /> </iscomment>
+
+                <isinclude url="${URLUtils.url('PDescription-Show')}" sf-toolkit="on" />
+                
+            </div>
+        </div>
+
+        <div class="col-sm-6 bg-success">
+            <div class="p-4">
+                <iscomment>6-5: add remote include here</iscomment>
+                <isinclude url="${URLUtils.url('Basket')}" sf-toolkit="on" />
+
+            </div>
+        </div>
+
+    </div>
+
+    <iscomment>6-2: close decorator here</iscomment>
+</isdecorate>

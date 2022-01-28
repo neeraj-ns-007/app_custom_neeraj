@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-right: 4px solid grey;
+
+    #select_currency {
+      width: 12vw;
+      height: 7vh;
+      border-radius: 3px;
+      margin: 2vh 0 2vh 0;
+      outline: none;
+      background-color: blue;
+      color: white;
+      border: none;
+    }
+
+    .input_value {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(128, 128, 128, 0.24);
+      height: 9vh;
+      width: 16vw;
+      margin: 0vh 0 2vh 0;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 2px solid purple;
+      padding: 4.5vh 2vh 1vh 2vh;
+      position: relative;
+
+      #label_value {
+        position: absolute;
+        top: 20px;
+        font-size: 1.5rem;
+        color: purple;
+        transition: top 200ms ease-in, left 200ms ease-in,
+          font-size 200ms ease-in;
+      }
+
+      #amount {
+        border: none;
+        background-color: transparent;
+        font-size: 1.2rem;
+        outline: none;
+        height: 3vh;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          appearance: none;
+          margin: 0;
+        }
+      }
+
+      #amount:focus ~ #label_value,
+      #amount:valid ~ #label_value {
+        top: 10px;
+        color: purple;
+        font-size: 1.1rem;
+      }
+    }
+
+    #submit_btn {
+      width: 12vw;
+      height: 9vh;
+      border-radius: 5px;
+      border: none;
+      background-color: red;
+      color: white;
+    }
+    #success_msg {
+      font-weight: 500;
+      margin: 1vh 0 2vh 0;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+  }
+
+  }
+
+  .container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+                                                                                                                            
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+    display: flex;
+    padding: 3vw;
+
+    .container-1 {
+      width: 100%;
+      border-right: initial;
+
+      #select_currency {
+        width: 60%;
+        margin: 1vh 0 1vh 0;
+        font-size: 1.3rem;
+      }
+
+      .input_value {
+        width: 100%;
+      }
+
+      #submit_btn {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+
+      #message_val {
+        margin: 1vh 0 1vh 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+
+    .container-2 {
+      width: 100%;
+      font-size: 2rem;
+    }
+  }
+}

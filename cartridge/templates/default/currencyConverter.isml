@@ -24,7 +24,7 @@
                     <label for="amount" id="label_value">Value</label>
                 </div>
 
-                <button id="submit_btn" type="submit" name="submit">Get USD Values</button>
+                <button id="submit_btn" type="submit" name="submit">Get USD Value</button>
 
                 <isif condition="${pdict.result != null}">
 

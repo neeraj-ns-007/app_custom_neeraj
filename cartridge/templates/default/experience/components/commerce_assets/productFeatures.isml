@@ -1,0 +1,13 @@
+<div style="margin-top:3em;">
+
+    <div class="col" style="display:flex;">
+        <div style="padding-right:1em;">
+            <img src="<isprint value=" ${pdict.feature_1_image.file.absURL}" encoding="off" />" alt=""
+            style="object-fit:contain;">
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center;">
+            <isprint value="${pdict.feature_1_desc}" encoding="off" />
+        </div>
+    </div>
+
+</div>

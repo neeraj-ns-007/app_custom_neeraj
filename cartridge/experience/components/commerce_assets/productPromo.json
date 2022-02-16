@@ -1,0 +1,43 @@
+{
+    "name": "Product Promotion",
+    "description": "Product promo for your website",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "productPromoAttributes",
+            "name": "Product Promo Configurations",
+            "description": "This will let you product promotion",
+            "attribute_definitions": [
+                {
+                    "id": "model_image_ID",
+                    "name": "Model Image",
+                    "description": "Provide the Model's Image",
+                    "type":"image",
+                    "required": true
+                },
+                {
+                    "id": "heading_text_description",
+                    "name": "Text Heading Description",
+                    "description": "Provide the heading description",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_button_name_ID",
+                    "name": "ID of product Button",
+                    "description": "Provide the Name of the Button.",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_button_url_ID",
+                    "name": "URL of product Button",
+                    "description": "Provide the link of the button.",
+                    "type":"string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

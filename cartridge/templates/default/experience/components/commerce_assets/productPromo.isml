@@ -1,0 +1,24 @@
+<isscript>
+     var assets = require('*/cartridge/scripts/assets.js');
+     assets.addCss('/css/productPromo.css');
+</isscript>
+
+<div class="main--container">
+
+    <div class="container---1">
+        <img src="${pdict.model_image_ID.file.absURL}" alt="" srcset="">
+    </div>
+
+    <div class="container---2">
+
+        <div>
+            <p class="product--heading">
+                <isprint value="${pdict.heading_text_description}" encoding="off" />
+            </p>
+
+            <a href="${pdict.product_button_url_ID}"> <input type="button"
+                    value='<isprint value="${pdict.product_button_name_ID}" encoding="off"/>' class="shop--btn"> </a>
+        </div>
+
+    </div>
+</div>

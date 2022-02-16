@@ -3,8 +3,10 @@ var URLUtils = require('dw/web/URLUtils');
 
 function onRequest() {
 	if (request.httpRequest && !request.includeRequest) {
-		if (request.httpQueryString.match(/magic=true/ig)) {
-			response.redirect(URLUtils.url('Magic-Show'));
+		if (request.httpQueryString) {
+			if (request.httpQueryString.match(/magic=true/ig)) {
+				response.redirect(URLUtils.url('Magic-Show'));
+			}
 		}
 	}
 	

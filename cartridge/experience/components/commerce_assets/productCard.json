@@ -1,0 +1,71 @@
+{
+    "name": "Product Card Tile",
+    "description": "Product Card details",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "productCardAttributes",
+            "name": "Product card Configurations",
+            "description": "This will have product card",
+            "attribute_definitions": [
+                {
+                    "id": "discount_ID",
+                    "name": "discount text",
+                    "description": "discount area",
+                    "type": "string",
+                    "required": false
+                },
+                {
+                    "id": "card_heading_ID",
+                    "name": "heading",
+                    "description": "heading area",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "card_image_ID",
+                    "name": "Card Image",
+                    "description": "card image",
+                    "type": "image",
+                    "required": true
+                },
+                {
+                    "id": "card_link_ID",
+                    "name": "name of link for product",
+                    "description": "this will provide links",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "card_url_ID",
+                    "name": "Url of link for product",
+                    "description": "this will provide links",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "card_price_ID",
+                    "name": "product price",
+                    "description": "this will provide price",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "product_button_name_ID",
+                    "name": "ID of product Button",
+                    "description": "Provide the Name of the Button.",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_button_url_ID",
+                    "name": "URL of product Button",
+                    "description": "Provide the link of the button.",
+                    "type":"string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

@@ -1,0 +1,4 @@
+<div style="text-align:center;margin-top:4em;">
+    <p><h1><isprint value="${pdict.heading_text}" encoding="off" /></h1></p>
+    <p style="font-size:1.5rem;"><isprint value="${pdict.heading_text_description}" encoding="off" /></p>
+</div>

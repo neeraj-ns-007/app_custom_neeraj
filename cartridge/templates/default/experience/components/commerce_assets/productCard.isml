@@ -1,0 +1,46 @@
+<div class="card" style="width: 20rem; border-radius: 1rem; overflow:hidden; margin:2em; position:relative;">
+
+    <div style="background-color:#ff525c;
+                text-align: center; 
+                position: absolute; 
+                right: 0; 
+                border-bottom-left-radius:1rem;
+                color:white;
+                width: 7em;
+                padding: 0.5em;
+                font-size:1.1em;
+                font-weight:500;">
+        Save <isprint value="${pdict.discount_ID}" encoding="off" /> %
+    </div>
+
+    <img class="card-img-top" src="<isprint value="${pdict.card_image_ID.file.absURL}" encoding="off" />" alt="Card
+    image cap">
+
+    <div class="card-body" style="text-align:center;">
+
+        <h3 class="card-title">
+            <p style="width: 70%; margin: auto;"><isprint value="${pdict.card_heading_ID}" encoding="off" /></p>
+        </h3>
+
+        <a href="<isprint value="${pdict.card_url_ID}" encoding="off" />" style="text-decoration:none;">
+        <p style="color:grey;text-decoration: underline;">
+            <isprint value="${pdict.card_link_ID}" encoding="off" />
+        </p>
+        </a>
+
+        <p class="card-text" style="font-weight: bold;">
+            <isprint value="${pdict.card_price_ID}" encoding="off" />
+        </p>
+
+        <a href="<isprint value="${pdict.product_button_url_ID}" encoding="off" />">
+        <input type="button" value="<isprint value="${pdict.product_button_name_ID}" encoding="off" />"
+        style="width:13em;
+            color:white;
+            background-color:black;
+            height:3em;
+            border-radius: 0.5rem;
+            border:none;">
+        </a>
+
+    </div>
+</div>

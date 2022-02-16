@@ -1,0 +1,29 @@
+{
+    "name": "Page Features",
+    "description": "Page Features for your website",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "featuresAttributes",
+            "name": "Features Configurations",
+            "description": "This will let you add product features",
+            "attribute_definitions": [
+                {
+                    "id": "feature_1_image",
+                    "name": "ID of product Feature 1",
+                    "description": "Provide the image of the product.",
+                    "type":"image",
+                    "required": true
+                },
+                {
+                    "id": "feature_1_desc",
+                    "name": "ID of product Feature 1",
+                    "description": "Provide the image description of the product.",
+                    "type":"string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Product Expert Suggestion",
+    "description": "Product Expert Suggestion",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "expertAttributes",
+            "name": "Expert's Configurations",
+            "description": "This have expert's suggestions",
+            "attribute_definitions": [
+                {
+                    "id": "suggestion_area_ID",
+                    "name": "Suggestion text",
+                    "description": "suggestion area",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "expert_name_ID",
+                    "name": "Expert's name",
+                    "description": "name area",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "expert_image_ID",
+                    "name": "Expert's Image",
+                    "description": "expert's image",
+                    "type": "image",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

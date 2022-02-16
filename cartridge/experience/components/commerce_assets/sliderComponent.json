@@ -1,0 +1,57 @@
+{
+    "name": "Slider Component",
+    "description": "Slides to add component",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "imageForSlide",
+            "name": "Image for slide",
+            "description": "This component will add a slide.",
+            "attribute_definitions": [
+                {
+                    "id": "imageID",
+                    "name": "ID of Image",
+                    "description": "Provide the ID of the Image.",
+                    "type":"image",
+                    "required": true
+                },
+                {
+                    "id": "navDotColor",
+                    "name": "color for slider navigator",
+                    "description": "this will add color",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "imageHeading",
+                    "name": "heading for image",
+                    "description": "this will add heading",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "imageDescription",
+                    "name": "image DEscription",
+                    "description": "this will add description",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "btnName",
+                    "name": "Button Name",
+                    "description": "this will add name to button",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "btnURL",
+                    "name": "Button URL",
+                    "description": "this will add link to Button",
+                    "type": "string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

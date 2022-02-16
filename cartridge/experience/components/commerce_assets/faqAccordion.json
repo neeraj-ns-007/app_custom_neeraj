@@ -1,0 +1,36 @@
+{
+    "name": "FAQ",
+    "description": "Component to add FAQ",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "faqComponentAttributes",
+            "name": "FAQ Component Configurations",
+            "description": "This component will add a FAQ row",
+            "attribute_definitions": [
+                {
+                    "id": "faqQuestionNumber",
+                    "name": "Queston FAQ Number",
+                    "description": "This is FAQ question Number",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "faqQuestion",
+                    "name": "Queston FAQ",
+                    "description": "This is FAQ question",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "faqAnswer",
+                    "name": "Answer FAQ",
+                    "description": "This is FAQ Answer",
+                    "type": "string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

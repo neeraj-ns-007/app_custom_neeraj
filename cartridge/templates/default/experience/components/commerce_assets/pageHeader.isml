@@ -1,0 +1,21 @@
+<isscript>
+     var assets = require('*/cartridge/scripts/assets.js');
+     assets.addCss('/css/pageHeaderStyle.css');
+</isscript>
+<div class="main-container">
+    <div class="container-1">
+        <div class="container-1-group">
+            <p class="product-heading">
+                <isprint value="${pdict.product_heading_ID}" encoding="off" />
+            </p>
+            <p class="product-description">
+                <isprint value="${pdict.product_description_ID}" encoding="off" />
+            </p>
+            <a href="${pdict.product_button_url_ID}"> <input type="button" value='<isprint value="${pdict.product_button_name_ID}" encoding="off"/>'
+                class="shop-btn"> </a>
+        </div>
+    </div>
+    <div class="container-2">
+        <img src="${pdict.product_image.file.absURL}" alt="" srcset="">
+    </div>
+</div>

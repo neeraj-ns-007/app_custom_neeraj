@@ -1,0 +1,36 @@
+<isscript>
+     var assets = require('*/cartridge/scripts/assets.js');
+     assets.addCss('/css/customSliderCss.css');
+     assets.addJs('/js/customSliderJS.js')
+</isscript>
+<div class="slider-container">
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <iscomment> <img src="<isprint value="${pdict.imageID.file.absURL}" encoding="off" />" alt=""> </iscomment>
+        <iscomment> <isprint value="${pdict.imageID.file.absURL}" encoding="off" /> </iscomment>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="${pdict.imageID.file.absURL}" alt="">
+        </div>
+
+    </div>
+    
+    <!-- The dots/circles -->
+    <div class="dot-container">
+        <div class="heading-text">
+            6 delicious flavours
+        </div>
+        <div class="dot-container">
+            <span class="dot" style="background-color:${pdict.navDotColor}"></span>
+        </div>
+        <div class="product-text-heading">
+            <isprint value=" ${pdict.imageHeading}" encoding="off" />
+        </div>
+        <div class="product-text">
+            <isprint value=" ${pdict.imageDescription}" encoding="off" />
+        </div>
+
+        <a href="<isprint value=" ${pdict.btnURL}" encoding="off" />"><input type="button" value="<isprint value=" ${pdict.btnName}" encoding="off" />" class="btn-class"></a>
+    </div>
+</div>

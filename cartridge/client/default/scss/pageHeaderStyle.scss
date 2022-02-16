@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// font-family: "Poppins", sans-serif;
+// overflow-x: hidden;
+// }
+// .container{
+// max-width: 100%;
+
+// }
+
+// .col-12{
+//   padding: 0;
+// }
+.storepage {
+  .container {
+    max-width: 100%;
+  }
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: 999px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8vw;
+    background-color: rgba(128, 128, 128, 0.295);
+    
+    @media screen and (max-width: 999px) {
+      width: 100%;
+      text-align: center;
+      padding-left: initial;
+    }
+    .container-1-group {
+      @media screen and (max-width: 999px) {
+        width: 50%;
+      }
+
+      .product-heading {
+        font-size: 3.1rem;
+        margin-bottom: 0.1em;
+        @media screen and (max-width: 600px) {
+          font-size: 2.4rem;
+        }
+      }
+
+
+      .product-description {
+        padding-right: 5em;
+        @media screen and (max-width: 1100px) {
+          padding-right: 2em;
+        }
+        @media screen and (max-width: 999px) {
+          padding-right: initial;
+        }
+      }
+
+      .shop-btn {
+        margin-top: 1.2em;
+        margin-bottom: 1.5em;
+        width: 15em;
+        height: 3em;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        background: linear-gradient(90deg, #d8173c, #ff525c);
+        color: white;
+      }
+    }
+  }
+
+  .container-2 {
+    width: 50%;
+    @media screen and (max-width: 999px) {
+      width: 100%;
+      height: 50vh;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @media screen and (max-width: 999px) {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      @media screen and (max-width: 450px) {
+        position: initial;
+        top: initial;
+        transform: initial;
+      }
+    }
+  }
+}

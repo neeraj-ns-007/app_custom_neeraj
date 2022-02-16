@@ -1,0 +1,18 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/commerceLayouts/carousel.css');
+    assets.addCss('/css/faqLayoutStyle.css');
+    assets.addJs('/js/carousel.js');
+</isscript>
+
+<div class="layout-container">
+    <div class="container-part-1" >
+        <h1>
+            FAQ
+        </h1>
+    </div>
+    <div class="carousel slide" data-number-of-slides="${pdict.numberOfSlides}">
+
+        <isprint value="${pdict.regions.slides.render()}" encoding="off" />
+    </div>
+</div>

@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .slider-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 2em;
+  
+    @media screen and (max-width: 999px) {
+      flex-direction: column;
+    }
+    .slideshow-container {
+      width: 50%;
+      position: relative;
+      margin: auto;
+      display: flex;
+      flex-direction: row-reverse;
+  
+      @media screen and (max-width: 999px) {
+        width: 100%;
+        margin-top: 3em;
+        justify-content: center;
+        flex-direction: initial;
+      }
+  
+      .mySlides {
+        // display: none;
+        img {
+          height: auto;
+          width: 34.6875rem;
+          border-radius: 1em;
+          @media screen and (max-width: 999px) {
+            float: none;
+            width: 20rem;
+          }
+        }
+      }
+    }
+  
+    .dot-container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5rem;
+  
+      @media screen and (max-width: 999px) {
+        align-items: center;
+        padding-left: 0;
+        width: 100%;
+      }
+  
+      .heading-text {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 999px) {
+          position: absolute;
+          top: 0;
+          font-size: 1.3em;
+        }
+      }
+  
+      .dot {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        margin-right: 1em;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-bottom: 1rem;
+      }
+  
+      .active,
+      .dot:focus {
+        outline: 2px solid black;
+      }
+  
+      .product-text-heading {
+        font-size: 2em;
+        font-weight: 500;
+        width: 7.5em;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 999px) {
+          text-align: center;
+          font-size: 1.5em;
+        }
+      }
+      .product-text {
+        width: 30em;
+        margin-bottom: 1.7rem;
+        @media screen and (max-width: 999px) {
+          text-align: center;
+          width: 19em;
+        }
+      }
+      .btn-class {
+        width: 16em;
+        height: 3em;
+        color: white;
+        background-color: black;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+      }
+    }
+  }
+  

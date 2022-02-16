@@ -9,7 +9,7 @@ function send(customerEmail, templateContext) {
 
     var context = new HashMap();
     var email = new Mail();
-    var template = new Template('/newsletter/confirmationEmail');
+    var template = new Template('customEmailTemplate');
 
     email.addTo(customerEmail);
     email.setFrom(Site.current.getCustomPreferenceValue('customerServiceEmail') || 'no-reply@salesforce.com');

@@ -1,0 +1,29 @@
+<isscript>
+     var assets = require('*/cartridge/scripts/assets.js');
+     assets.addCss('/css/productExpertStyle.css');
+</isscript>
+<div class="head-container">
+
+  <div class="grey-bar">
+  </div>
+  <div class="container--main">
+
+    <div class="container--1">
+      <div>
+        <img
+          src="https://www.mymusclechef.com/on/demandware.static/-/Library-Sites-mmc-shared-library/default/dw66d037fa/landing-pages/Muffin-Bars/NEW-D.png"
+          alt="">
+        <br><br>
+        <p class="description-product">
+          <isprint value="${pdict.suggestion_area_ID}" encoding="off" />
+        </p>
+        <p class="description-product" style="font-weight:bold;">
+          <isprint value="${pdict.expert_name_ID}" encoding="off" />
+        </p>
+      </div>
+    </div>
+    <div class="container--2">
+      <img src="<isprint value=" ${pdict.expert_image_ID.file.absURL}" encoding="off" />" alt="">
+    </div>
+  </div>
+</div>

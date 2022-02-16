@@ -1,0 +1,9 @@
+.carousel-slide {
+  .experience-region {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 999px) {   
+      overflow-x: scroll;
+  }
+}

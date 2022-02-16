@@ -1,0 +1,50 @@
+{
+    "name": "Page Header",
+    "description": "Page header for your website",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "headingAttributes",
+            "name": "Heading Configurations",
+            "description": "This will let you add product heading",
+            "attribute_definitions": [
+                {
+                    "id": "product_heading_ID",
+                    "name": "ID of product heading",
+                    "description": "Provide the Name of product heading.",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_description_ID",
+                    "name": "ID of product description",
+                    "description": "Provide the product description.",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_button_name_ID",
+                    "name": "ID of product Button",
+                    "description": "Provide the Name of the Button.",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_button_url_ID",
+                    "name": "URL of product Button",
+                    "description": "Provide the link of the button.",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "product_image",
+                    "name": "ID of product Image",
+                    "description": "Provide the link of the image.",
+                    "type":"image",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

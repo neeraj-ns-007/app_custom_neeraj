@@ -1,0 +1,11 @@
+.layout-container{
+    display: flex;
+    margin-top: 3em;
+    @media screen and (max-width:999px) {
+        flex-direction: column;
+    }
+    .container-part-1{
+        text-align:center;
+        margin:2rem;
+    }
+}

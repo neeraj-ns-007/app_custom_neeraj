@@ -1,0 +1,49 @@
+.accordion-container {
+    border-bottom: 1px solid grey;
+    padding: 1em;
+  
+    .accordion:after {
+      content: "\2304";
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+  
+    .active:after {
+      content: "\2212";
+    }
+    .accordion {
+      background-color: transparent;
+      color: grey;
+      cursor: pointer;
+      padding: 18px 18px 0 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+  
+      .num-color {
+        color: #ff525c !important;
+        font-size: 2rem;
+        margin-right: 0.5em;
+        font-weight: 600;
+      }
+      .text-color {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+    .panel {
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      padding-left: 5em;
+      padding-right: 20em;
+      transition: max-height 0.2s ease-out;
+      .answer-text {
+        font-size: 0.9rem;
+      }
+    }
+  }

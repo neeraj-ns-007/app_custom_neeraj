@@ -1,0 +1,16 @@
+<isscript>
+     var assets = require('*/cartridge/scripts/assets.js');
+     assets.addCss('/css/accordion.css');
+     assets.addJs('/js/bootstrapJs.js')
+</isscript>
+
+<div class="accordion-container">
+  <button class="accordion">
+    <span class="num-color"><isprint value="${pdict.faqQuestionNumber}" encoding="off" /></span>
+    <span class="text-color "> <isprint value="${pdict.faqQuestion}" encoding="off" /></span>
+  </button>
+
+  <div class="panel">
+    <p class="answer-text"> <isprint value="${pdict.faqAnswer}" encoding="off" /></p>
+  </div>
+</div>

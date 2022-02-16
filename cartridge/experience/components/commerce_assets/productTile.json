@@ -1,0 +1,29 @@
+{
+    "name": "Heading text with description",
+    "description": "Heading text for your website",
+    "group": "Custom",
+    "attribute_definition_groups": [
+        {
+            "id": "headingAttributes",
+            "name": "Heading Configurations",
+            "description": "This will let you add heading and sub description",
+            "attribute_definitions": [
+                {
+                    "id": "heading_text",
+                    "name": "Text Heading ID",
+                    "description": "Provide the heading",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id": "heading_text_description",
+                    "name": "Text Heading Description",
+                    "description": "Provide the heading description",
+                    "type":"string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

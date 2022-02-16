@@ -1,5 +1,6 @@
 'use strict';
 
+
 var server = require('server');
 var service = require('~/cartridge/services/currencyService');
 

@@ -3,7 +3,6 @@
 var server = require('server'); 
 
 server.get('Start', function(req, res, next){
-    // HookMgr.callHook('app.email', 'send', 'neerajsharma@cyntexa.com');
     send('neerajsharma@cyntexa.com');
     res.print('okay!!!')
     next();
@@ -17,7 +16,7 @@ function send(customerEmail) {
 
     var context = new HashMap();
     var email = new Mail();
-    var template = new Template('customEmailTemplate');
+    var template = new Template('TemplateForEmail');
 
     email.addTo(customerEmail);
     email.setFrom(Site.current.getCustomPreferenceValue('customerServiceEmail') || 'no-reply@salesforce.com');

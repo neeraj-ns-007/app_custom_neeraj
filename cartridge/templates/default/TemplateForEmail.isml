@@ -1,0 +1,92 @@
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+
+<body>
+    <div style="width: 100%; margin: 0; background-color: white;">
+
+        <div style="display:flex;justify-content:center;margin:auto;">
+            <a href="#" style="margin:auto;">
+                <img style="width:auto;height:100px"
+                    src=" " alt="">
+            </a>
+        </div>
+        <div style="display:flex;justify-content:center;">
+            <a href="#" style="margin:auto;">
+                <img style="width:100%"
+                    src="https://img.freepik.com/free-vector/email-campaign-concept-illustration_114360-1633.jpg?size=626&ext=jpg"
+                    alt="">
+            </a>
+        </div>
+
+        <div style="text-align:center;">
+            <h1>
+                <p>Update on a background check for ASD(Web Developer) at Cyntexa</p>
+            </h1>
+        </div>
+
+        <div style="margin:3rem;">
+            <h2>Hi Andrew,</h2>
+            <p>Received your mail and hope this mail reads you well. Talent acquisition often requires a huge
+                investment
+                of
+                time and resources, so it is always safe and secure to do your due diligence before onboarding a new
+                hire.
+            </p>
+
+            <strong>
+                <p>To go ahead with your data verification, we would require these documents from you:</p>
+            </strong>
+            <strong>
+                <ul>
+                    <li>Original Aadhar Card</li>
+                    <li>PAN Card</li>
+                    <li>Ration Card</li>
+                </ul>
+            </strong>
+            <div style="display:flex;justify-content:center;margin:3rem;">
+                <a href="https://zydf-001.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-neeraj-site-Site/en_US/Home-Show"
+                    style="background-color:#272727;color:#fff;border:none;font-size:1rem;padding:1rem 0rem;letter-spacing:0.2rem;border-radius:3rem;margin:auto;text-decoration:none;width:200px;text-align:center;">
+                    Verfiy Now
+
+                </a>
+            </div>
+            <p>This will ensure the authenticity of your data and information with the verification process is
+                pretty
+                simple
+                and short. The information you provide is confidential and safe with us.</p>
+
+            <p>If you have any questions/issues regarding the process, feel free to contact us. </p>
+
+            <p>With Regards,</p>
+
+            <strong>
+                <p>Neeraj Sharma</p>
+            </strong>
+
+            <div style="text-align:center;">
+                <span style="font-size: 1.7em;">Call:</span>
+                <span style="font-size: 1.7em; font-weight: 600;">123-456-7890</span>
+            </div>
+        </div>
+
+        <div style="background-color:#272727;">
+            <div style="width:100%;display:flex;justify-content:center;padding-top: 1rem;padding-bottom:1rem;">
+                <a href="#" style="margin:auto;text-decoration:none;">
+                    <img style="width:32px; margin-right:0.5rem"
+                        src="https://img.icons8.com/color/48/000000/linkedin.png" />
+                    <img style="width:32px; margin-right:0.5rem"
+                        src="https://img.icons8.com/color/48/000000/twitter--v1.png" />
+                    <img style="width:32px; margin-right:0.5rem"
+                        src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+                    <img style="width:32px; margin-right:0.5rem"
+                        src="https://img.icons8.com/color/48/000000/pinterest--v1.png" />
+                </a>
+            </div>
+            <div style="text-align:center;color:#fff;padding-bottom:1.5rem;">
+
+                <p>You're receiving this email because you asked us about regular newsletter.</p>
+
+                <p>©2022 Cyntexa Labs | 123 San Francisco, CA. United States</p>
+            </div>
+        </div>
+    </div>
+</body>

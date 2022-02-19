@@ -1,0 +1,7 @@
+<isdecorate template="common/layout/page">
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/tempEmail.js');
+</isscript>
+<input data-url="${URLUtils.url('tempEmail-Start')}" type="file" id="emailInput"/>
+</isdecorate>

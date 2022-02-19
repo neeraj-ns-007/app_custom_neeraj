@@ -1,26 +1,16 @@
-$("#emailInput").on('change', function(){
-    sendFile($(this));
-    
-    // console.log(files[0].name)
+$("#btnSend").on('click', function(){
+    var tempData = $('#emailInput')
+    sendFile(tempData);
 });
-
-function sendFile(el){
+async function sendFile(el){
     var data = el.data();
     var files = el.prop('files');
-    var formData = new FormData();
-    formData.append("file", files[0], files[0].name);
-    formData.append("upload_file", true);
-    console.log(formData);
+    var formData = await toBase64(files[0]);
+    formData += ',' + files[0].name;
+
     $.ajax({
         type: 'POST',
-        url: data.url + "?data=something",
-        xhr: function () {
-            var myXhr = $.ajaxSettings.xhr();
-            if (myXhr.upload) {
-                myXhr.upload.addEventListener('progress', el.progressHandling, false);
-            }
-            return myXhr;
-        },
+        url: data.url,
         success: function(res){
             console.log(res);
         },
@@ -28,7 +18,7 @@ function sendFile(el){
             console.log(err);
         },
         async: true,
-        data: "formData",
+        data: formData.toString(),
         cache: false,
         contentType: false,
         processData: false,
@@ -36,4 +26,9 @@ function sendFile(el){
     })
 }
 
-console.log("working");
+const toBase64 = file => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+});

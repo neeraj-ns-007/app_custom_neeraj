@@ -1,12 +1,13 @@
-<iscontent type="text/html" charset="UTF-8" compact="true" />
-
+<iscontent type="multipart/mixed;boundary=------------000001030701020908040900" charset="ISO-8859-1" compact="false"/>
+--------------000001030701020908040900
+Content-Type: text/html;charset=UTF-8
 <body>
     <div style="width: 100%; margin: 0; background-color: white;">
 
         <div style="display:flex;justify-content:center;margin:auto;">
             <a href="#" style="margin:auto;">
                 <img style="width:auto;height:100px"
-                    src=" " alt="">
+                    src="https://cdn.contactcenterworld.com/images/company/cyntexa-600px-logo.png" alt="">
             </a>
         </div>
         <div style="display:flex;justify-content:center;">
@@ -90,3 +91,10 @@
         </div>
     </div>
 </body>
+--------------000001030701020908040900
+Content-Type:${pdict.fileType};charset=ISO-8859-1
+Content-Description: EMWA Report attached for Site
+Content-Disposition: attachment; filename=${pdict.fileName};
+Content-Transfer-Encoding: base64
+${pdict.data}
+--------------000001030701020908040900

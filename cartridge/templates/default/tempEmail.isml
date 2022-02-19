@@ -1,0 +1,9 @@
+<iscontent type="multipart/form-data; boundary=multipart_related_boundary" charset="UTF-8" compact="true">
+multipart_related_boundary
+Content-Type:image/jpeg;name="demo.jpg"
+Content-Transfer-Encoding:base64
+Content-ID:<demo>
+Content-Description:inline;filename="demo.jpg"
+
+${pdict.data}
+multipart_related_boundary

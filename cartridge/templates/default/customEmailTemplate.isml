@@ -5,10 +5,10 @@
 </isscript>
     <div class="row">
         <div class="col text-right">
-            <input type="file" id="emailInput" data-url="${URLUtils.url('HelloV2-Start')}">
+            <input type="file" id="emailInput" data-url="${URLUtils.url('emailSender-Start')}">
         </div>
         <div class="col">
-            <button type="button" class="btn btn-success">Upload & Send</button>
+            <button type="button" id="btnSend" class="btn btn-success">Upload & Send</button>
         </div>
     </div>
 </isdecorate>
